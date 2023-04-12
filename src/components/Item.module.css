@@ -1,0 +1,23 @@
+.container{
+    height:500px;
+    display: grid;
+    grid-template-areas:
+    'photo photo ingredients'
+    'photo photo ingredients'
+    'photo photo ingredients'
+    'instructions instructions instructions';
+    
+}
+
+.ingredients{grid-area:ingredients;}
+.instructions{grid-area:instructions;}
+.photo{grid-area:photo;}
+
+.container > div {
+    border:solid black 1px;
+}
+
+.images{border-radius: 50%; 
+        overflow: hidden;
+        width: 250px;
+        height: 250px;}
