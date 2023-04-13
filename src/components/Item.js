@@ -16,8 +16,10 @@ const Item = (props) => {
                                      alt={'alt'}></Image>: 'alternative'
                                     }
                                     </div>
-                                     <div className={styles.instructions}>{props.instruct}</div>
-    <div className={styles.ingredients}>{props.ingred}</div>
+                                     <div className={styles.instructions}>steps:<br/><br/>{props.instruct.map((i) => {
+                                      return <p>{i}</p>
+                                     })}</div>
+    <div className={styles.ingredients}>ingredients:<br/><br/>{props.ingred}</div>
       </div>
     <hr/>
     </>

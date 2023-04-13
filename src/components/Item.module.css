@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
 .container{
     height:500px;
     display: grid;
@@ -6,18 +8,24 @@
     'photo photo ingredients'
     'photo photo ingredients'
     'instructions instructions instructions';
+    font-family: 'Josefin Sans', sans-serif;
     
 }
 
-.ingredients{grid-area:ingredients;}
-.instructions{grid-area:instructions;}
+.ingredients{grid-area:ingredients;
+            padding: 10px;}
+.instructions{grid-area:instructions;
+            padding:10px;}
 .photo{grid-area:photo;}
 
 .container > div {
     border:solid black 1px;
+    margin:5px;
 }
 
 .images{border-radius: 50%; 
         overflow: hidden;
         width: 250px;
-        height: 250px;}
+        height: 250px;
+        margin:10px;}
+
