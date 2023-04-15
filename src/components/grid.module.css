@@ -1,8 +1,19 @@
-.container{width:100%;
+.container{
+    width:100%;
+    min-height: 100%;
     border: black solid 1px;
     display: grid;
     width:80%;
     margin: auto;
     padding:10px;
     row-gap: 20px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin-bottom: 20px;
     }
+
+    @media only screen and (max-width: 625px) {
+        .container {
+           overflow: visible;
+        }}
+
