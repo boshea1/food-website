@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 .container{
-    height:500px;
+    /* height:500px; */
     display: grid;
     grid-template-areas:
     'photo photo ingredients'
@@ -9,6 +9,7 @@
     'photo photo ingredients'
     'instructions instructions instructions';
     font-family: 'Josefin Sans', sans-serif;
+    min-height: 100%;
     
     
 }
@@ -36,11 +37,13 @@
             }
             .images {
               border-radius: 50%;
-              width:100%
+              width:100%;
+              /* transform: translateX(-50px) */
             }
             .container > .images {
                 width:200px;
                 margin:50px 10px 0px 0px;
+                transform: translateX(-90px);
 
             }}
 
@@ -49,7 +52,20 @@
                    margin-bottom: 10px;
                    display: flex; /*added*/
                    flex-direction: column; /*added*/
-                }}
+                }
+                .container>div:nth-child(4){
+                    transform: translatex(-90px);
+                    border: none;
+                }
+                .rule{
+                    color: transparent;
+                }
+               
+            }
+
+            .rule{
+                width:100%;
+                border: solid 2px;}
                
         
           

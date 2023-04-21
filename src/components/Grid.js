@@ -8,7 +8,7 @@ const Grid = ({food}) => {
       
         var y = food[k][1]
           var x = y.map((i) => {
-            return <Item gem={i.name}
+            return <Item gem={i.name} key={i.name}
             img={i.image}
             ingred={i.ingredients}
             instruct={i.instructions}/>

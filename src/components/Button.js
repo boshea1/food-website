@@ -3,21 +3,24 @@ import styles from './Button.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const Button = (props) => {
-  
+const MyButton = (props) => {
+
 
   return (
-    <div>
+    <div key={props.food}>
+    
+            <button className={styles.but} key={props.food}>
         <Link href={`${props.food}`}>
-            <button className={styles.but}>{props.food != '/' ? `${props.food}` : 'Home' }<br/>
+              {props.food != '/' ? `${props.food}` : 'Home' }<br/>
                                             <Image src={props.img} 
-                                              alt={props.alt}
+                                              // alt={props.alt}
+                                              alt='alt'
                                               width={50}
-                                              height={50}/></button>
-                                              
+                                              height={50}/>
                                              </Link>
+                                              </button>
     </div>
   )
 }
 
-export default Button
+export default MyButton
