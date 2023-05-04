@@ -1,12 +1,10 @@
 .div{
-    border: black solid 1px;
     display: flex;
     width:80%;
     margin: auto;
     justify-content: space-around;
     padding:10px;
     margin-bottom: 20px;
-    background-color: rgb(199, 225, 247);
     border-radius: 10%;
 }
 
