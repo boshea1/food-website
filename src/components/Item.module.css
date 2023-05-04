@@ -26,12 +26,24 @@
     
 }
 
+.polaroid {
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+  }
+  
+  .photo {
+    text-align: center;
+    padding: 10px 20px;
+  }
+
 .images{ 
         overflow: hidden;
         width: 250px;
         height: 250px;
         margin:10px;
-        border-radius: 10px;}
+        border-radius: 10px;} 
 
         @media only screen and (max-width: 720px) {
             .container div {
@@ -43,10 +55,12 @@
               /* transform: translateX(-50px) */
             }
             .container > .images {
-                width:200px;
+                width:100px;
+                height:100px;
                 margin:50px 10px 0px 0px;
                 transform: translateX(-90px);
-
+                margin-right: 10px;
+                margin-left:80px;
             }}
 
             @media only screen and (max-width: 625px) {

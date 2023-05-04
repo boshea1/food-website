@@ -5,7 +5,7 @@ import Image from 'next/image'
 const Item = (props) => {
   return (<>
     <div className={styles.container} key={props.gem}>
-    <h1>
+    <h1 style={{zIndex:1}}>
       {props.gem}
       </h1>
     <div className ={styles.images}>
@@ -16,10 +16,10 @@ const Item = (props) => {
                                      alt={'alt'}></Image>: 'alternative'
                                     }
                                     </div>
-                                     <div className={styles.instructions}>steps:<br/><br/>{props.instruct.map((i) => {
+                                     <div className={styles.instructions}><h4>steps:</h4><br/><br/>{props.instruct.map((i) => {
                                       return <p key={i}>{i}</p>
                                      })}</div>
-    <div className={styles.ingredients}>ingredients:<br/><br/>{props.ingred}</div>
+    <div className={styles.ingredients}><h4>ingredients:</h4><br/><br/>{props.ingred}</div>
     <hr/>
       </div>
       <hr className={styles.rule}/>
