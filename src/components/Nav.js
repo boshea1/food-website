@@ -4,10 +4,12 @@ import MyButton from './Button'
 import {useState, useEffect} from 'react'
 import Link from 'next/link'
 import Button from 'react-bootstrap/Button';
+import { useStoreState } from 'easy-peasy'
 
 
 
-const Nav = ({food}) => {
+const Nav = () => {
+    const food = useStoreState((state)=> state.screenModel.food);
     if (typeof window !== 'undefined'){
     
     
